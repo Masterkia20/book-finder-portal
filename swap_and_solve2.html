@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Online Book Finder Portal</title>
+    <style>
+        body { font-family: Arial; }
+        #books { display: flex; flex-wrap: wrap; gap: 10px; }
+        .book { border: 1px solid #aaa; padding: 10px; width: 150px; }
+        .book img { width: 100%; }
+        #popup {
+            position: fixed;
+            background: white;
+            border: 1px solid black;
+            padding: 10px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<h1>📚 Book Finder</h1>
+
+<input type="text" id="search-input" placeholder="Search books..." />
+<input type="text" id="language" placeholder="Language (optional)" />
+<button id="search-button">Search</button>
+
+<select id="genre-select">
+    <option value="">All</option>
+    <option>fantasy</option>
+    <option>history</option>
+    <option>science</option>
+    <option>romance</option>
+</select>
+
+<div id="books"></div>
+<div id="popup"></div>
+
+<script src="swap_and_solve2.js"></script>
+</body>
+</html>
